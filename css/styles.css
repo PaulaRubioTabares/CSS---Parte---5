@@ -70,5 +70,34 @@ section:hover{
     left: 30px;
 }
 
+/* Position */
+.primera_fila::first-line{
+    background-color: #d1caca;
+}
+/* Ejemplo 1 */
+.position__1{
+    position: relative;
+}
+.position__2{
+    position: relative;
+    bottom: 50px;
+    left: 30px;
+}
+/* Ejemplo 2 */
+.position__4{
+    position: relative;
+}
+.position__3{
+    position: relative;
+    top: 45px;
+    left: 30px;
+}
+/* Ejemplo 3 */
+.position__5{
+    position: relative;
+    top: 45px;
+    left: 30px;
+}
+
 
 /* Fin Stacking Context */

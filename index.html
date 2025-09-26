@@ -48,6 +48,27 @@
                 <p>El segundo elemento tiene un desplazamiento para ver mejor este efecto. </p>
 
 <hr>
+            <h3>Propiedad de position sin z-index</h3>
+                <p>Si hay dos elementos con position, y <strong>ni uno con z-index</strong>, el elemento se sobrepondrá según el orden en el html.</p>
+                <p class="bloques position__1">Elemento con <strong>position 1</strong></p>
+                <p class="bloques position__2">Elemento con <strong>position 2</strong></p>
+                <p>En este caso en el html el <strong>Elemento con position 2</strong>esta después del elemento 1, por ello se coloca encima de este.</p>
+                <p>El segundo elemento tiene un desplazamiento para ver mejor este efecto.</p>
+
+        <!-- Sin z-index ejemplo 2 -->
+                <p class="primera_fila">Este es otro ejemplo en donde en el html esta primero el elemento 2 pero, en el código del css esta primero el elemento 1,
+                    pero igual el último elemento del html se coloca encima.</p>
+                <p class="bloques position__3">Elemento con <strong>position 2</strong></p>
+                <p class="bloques position__4">Elemento con <strong>position 1</strong></p>
+
+        <!-- Sin z-index ejemplo 3 -->
+                <p class="primera_fila">Otro caso que se da es donde <strong>solo uno de los dos</strong> elementos tienen la propiedad de position y el otro no.</p>
+                <p class="bloques position__5">Elemento con <strong>position</strong></p>
+                <p class="bloques">Elemento</p>
+                <p>Como el primer elemento tiene la propiedad de position y el segundo no, se colocará encima del que no tiene position definido,
+                    así el segundo este después en el html.</p>
+
+<hr>
 
         </section>
 
