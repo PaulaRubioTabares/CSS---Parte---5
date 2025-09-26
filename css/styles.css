@@ -230,3 +230,43 @@ section:hover{
 }
 
 /* Fin de rem y em */
+
+
+
+
+/* Medidas con Width */
+.contenedor__width{
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+    padding: 2em;
+
+    background-color: #D6B5C3;
+}
+.width__porcentual, .width__auto{
+    margin-left: auto;
+    margin-right: auto;
+
+    text-align: center;
+
+    background-color: #fff;
+    color: #6D394F;
+}
+
+/* width % */
+.width__porcentual{
+    width: 100%;
+}
+.porcentual__2{
+    margin-left: 8em;
+}
+
+/* width auto */
+.width__auto{
+    width: auto;
+}
+
+/* Fin Medidas con Width */
+
+
+

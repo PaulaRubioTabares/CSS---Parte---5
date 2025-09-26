@@ -148,5 +148,40 @@
 
 
 
+
+<!-- Width porcentual y auto -->
+        <section>
+            <h2>Width porcentual y auto</h2>
+            <p>Otras medidas relativas son auto y porcentaje, más usadas en los tamaños de los contenedores.</p>
+<hr>
+        <!-- Width porcentual -->
+            <h3>Width %</h3>
+            <p>Otra medida relativa es en % la cual se calcula automáticamente en relación con el tamaño de la ventana de visualización.</p>
+            <div class="contenedor__width">
+                <div class="width__porcentual">Caja con tamaño en 100% de su contenedor.</div>
+            </div>
+            <p>El espacio que queda de esta primera caja es del padding de su contenedor, pero al colocar un margin o padding al elemento que está dentro se puede desbordar.</p>
+            <div class="contenedor__width">
+                <div class="width__porcentual porcentual__2">Caja con tamaño en 100% de su contenedor y margin.</div>
+            </div>
+            <p>Este elemento ocupa a lo ancho un 100% de su contenedor, ese porcentaje no tiene en cuenta el espacio que se le coloque de margin al elemento que está dentro,
+                por ello se sale de su contenedor y puede crear una barra de scroll.
+            </p>
+<hr>
+        <!-- Width auto -->
+            <h3>Width Auto</h3>
+            <p>Para solucionar el problema de desbordamiento en vez de colocar un width en % se coloca width auto, ya que así el tamaño
+                lo calcula el navegador en base al contenido del elemento.</p>
+            <div class="contenedor__width">
+                <div class="width__auto">Caja con tamaño en auto de su contenedor y margin.</div>
+            </div>
+            <p>Con esto, se puede solucionar ese tipo de desbordamiento cuando se está usando width para ocupar todo el espacio disponible.</p>
+        </section>
+
+<!-- Fin Width porcentual y auto -->
+
+
+
+
 </body>
 </html>
