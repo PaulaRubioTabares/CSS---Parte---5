@@ -183,5 +183,30 @@
 
 
 
+<!-- Height porcentual y auto -->
+        <section>
+            <h2>Height porcentual y auto</h2>
+            <p>Estas medidas relativas al igual que se usan para width, se pueden usar para height.</p>
+            <p><strong>Para colocar height %, si o si debe estar dentro de un contenedor con altura definida, si no está en ese contenedor, el valor que se coloque
+                será reemplazado por height auto, y si no hay contenido en ese elemento entonces puede desaparecer.</strong></p>
+            <div class="contenedor__height">
+                <div class="height__porcentual">Caja con height 50% dentro de un contenedor con height: 8em;</div>
+            </div>
+            <p>Cuando el elemento está dentro de un contenedor con alto definido, el height % de ese elemento será en base a la altura de su contenedor.</p>
+                <div class="height__porcentual">Caja con height 50% sin contenedor de altura definida.</div>
+            <p>Como este segundo elemento no está dentro de un contenedor con altura definida, no se aplica ningún % y se coloca el height en auto ocupando solo su contenido.</p>
+                <div class="height__porcentual"></div>
+            <p>Y aunque no se vea, hay otro elemento con las mismas propiedades que los otros dos, pero al tener el height en %, y sin contenedor con height,
+                este se coloca en auto y como no tiene contenido desaparece visualmente.</p>
+        </section>
+
+<!-- Fin Height porcentual y auto -->
+
+
+
+
+    </main>
+
+
 </body>
 </html>

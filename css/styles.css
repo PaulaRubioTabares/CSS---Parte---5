@@ -270,3 +270,25 @@ section:hover{
 
 
 
+
+/* Medidas con height */
+.contenedor__height{
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+    height: 8em;
+
+    border: 5px solid #E6C4D2;
+}
+/* Height % */
+.height__porcentual{
+    height: 45%;
+
+    text-align: center;
+
+    background-color: #E6C4D2;
+    color: #6D394F;
+}
+
+/* Fin Medidas con height */
+
