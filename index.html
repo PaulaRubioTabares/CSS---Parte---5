@@ -20,6 +20,41 @@
         <h1>Css - Parte - 5</h1>
     </header>
 
+        <main>
+
+
+<!-- Inicio  Stacking Context -->
+        <section>
+            <h2>Stacking context</h2>
+            <p>El stacking context o contexto de apilamiento se refiere al orden en que se colocan o sobreponen los elementos o cajas que se crean en el html,
+                teniendo en cuenta las propiedades que se coloquen.
+            </p>
+            <p>El stacking content tiene la siguiente prioridad:</p>
+            <ol class="stacking__list">
+                <li>Elemento con la propiedad de <strong>position y z-index</strong> de 1 ó más</li>
+                <li>Elemento con la propiedad de <strong>position sin z-index</strong></li>
+                <li>Elemento <strong>sin</strong> la propiedad de <strong>position</strong></li>
+                <li>Elemento con <strong>z-index negativo</strong></li>
+            </ol>
+<hr>
+            <h3>Propiedad de position y z-index de 1 ó más</h3>
+                <p><strong>Cuando se aplica la propiedad de z-index, el elemento por obligación debe llevar la propiedad de position. </strong></p>
+        <!-- z-index  -->
+                <p>Si hay dos elementos con position, pero uno de ellos tiene z-index positivo, este se colocará encima del otro. </p>
+                <p class="bloques z__index_1">Elemento con <strong>z-index</strong></p>
+                <p class="bloques z__index_2">Elemento con <strong>position</strong></p>
+                <p>En este caso, el primer elemento tiene z index así que se colocará encima de los demás elementos,
+                    entre más grande sea el número de z index, más por encima se colocará ese elemento respecto a los demás. </p>
+                <p>El segundo elemento tiene un desplazamiento para ver mejor este efecto. </p>
+
+<hr>
+
+        </section>
+
+<!-- Fin Stacking Context -->
+
+
+
 
 
 </body>

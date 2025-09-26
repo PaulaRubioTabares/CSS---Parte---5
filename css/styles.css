@@ -12,3 +12,63 @@ header{
 header:hover{
     box-shadow: 0px 0px 40px #763F56;
 }
+main{
+    font-size: 1.5rem;
+}
+
+h1{
+    color: #e9337f;
+    text-align: center;
+    text-shadow: 5px 5px 10px #ffffff;
+}
+h2 {
+    text-align: center;
+    color: #E68BBE;
+    text-transform: capitalize;
+}
+h3{
+    color: #B18296;
+    text-transform: capitalize;
+}
+
+section {
+    padding: 0.8rem 3rem;
+    margin: 2rem 5rem;
+    background-color: #f6f2f7;
+    box-shadow: inset 0 0 10px #000;
+}
+section:hover{
+    box-shadow: 0px 0px 20px #763F56, inset 0px 0px 30px #763F56;
+    border-radius: 8px;
+}
+
+
+
+
+/* Stacking Context */
+.stacking__list{
+    margin: 1rem 5rem;
+}
+.bloques{
+    background-color: #B18296;
+    color: #f6f2f7;
+    padding: 3%;
+    width: 15%;
+    text-align: center;
+    border: 2px solid #000;
+    border-radius: 5px;
+}
+
+/* z-index */
+.z__index_1{
+    position: relative;
+    z-index: 1;
+}
+.z__index_2{
+    position: relative;
+    bottom: 50px;
+    left: 30px;
+}
+
+
+/* Fin Stacking Context */
