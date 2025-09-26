@@ -12,3 +12,194 @@ header{
 header:hover{
     box-shadow: 0px 0px 40px #763F56;
 }
+main{
+    font-size: 1.5rem;
+}
+
+h1{
+    color: #e9337f;
+    text-align: center;
+    text-shadow: 5px 5px 10px #ffffff;
+}
+h2 {
+    text-align: center;
+    color: #E68BBE;
+    text-transform: capitalize;
+}
+h3{
+    color: #B18296;
+    text-transform: capitalize;
+}
+
+section {
+    padding: 0.8rem 3rem;
+    margin: 2rem 5rem;
+    background-color: #f6f2f7;
+    box-shadow: inset 0 0 10px #000;
+}
+section:hover{
+    box-shadow: 0px 0px 20px #763F56, inset 0px 0px 30px #763F56;
+    border-radius: 8px;
+}
+
+
+
+
+/* Stacking Context */
+.stacking__list{
+    margin: 1rem 5rem;
+}
+.bloques{
+    background-color: #B18296;
+    color: #f6f2f7;
+    padding: 3%;
+    width: 15%;
+    text-align: center;
+    border: 2px solid #000;
+    border-radius: 5px;
+}
+
+/* z-index */
+.z__index_1{
+    position: relative;
+    z-index: 1;
+}
+.z__index_2{
+    position: relative;
+    bottom: 50px;
+    left: 30px;
+}
+
+/* Position */
+.primera_fila::first-line{
+    background-color: #d1caca;
+}
+/* Ejemplo 1 */
+.position__1{
+    position: relative;
+}
+.position__2{
+    position: relative;
+    bottom: 50px;
+    left: 30px;
+}
+/* Ejemplo 2 */
+.position__4{
+    position: relative;
+}
+.position__3{
+    position: relative;
+    top: 45px;
+    left: 30px;
+}
+/* Ejemplo 3 */
+.position__5{
+    position: relative;
+    top: 45px;
+    left: 30px;
+}
+
+
+/* Sin position */
+.position__6{
+    margin-top: -50px;
+    margin-left: 30px;
+}
+
+
+
+/* Varios contextos de apilamientos */
+
+/* Contenedor 1 */
+.contenedor__position{
+    background-color: #f2dfe8df;
+    padding-top: 20px;
+    border: 5px solid #C7B4BC;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+
+    position: relative;
+}
+.elemento__p{
+    background-color: #DAA2B9;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 15px;
+    color: #000000;
+}
+
+/* Contenedor 2 y sus elementos*/
+.contenedor_2{
+    background-color: #DBCBD2;
+    width: 90%;
+    border: 2px solid #707070;
+    margin-left: auto;
+    margin-right: auto;
+
+    position: relative;
+}
+
+/* Elementos del contenedor 2 */
+.title__div{
+    text-align: center;
+    padding: 1.5rem;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    color: #000;
+    background-color: #fff;
+    width: 60%;
+    opacity: 0.8;
+
+    position: relative;
+    z-index: 30;
+}
+.p__div_1{
+    border-top: 2px solid #707070;
+}
+.p__div{
+    padding: 0 1.5rem 0 1.5rem;
+}
+.p__div_ultimo{
+    padding: 0 1.5rem 0 1.5rem;
+    padding-bottom: 0;
+    margin: 0;
+
+}
+.lista__div{
+    margin: 0 2rem;
+}
+.lista__li::marker {
+  font-weight: bold; /* Aplica negrita al marcador */
+}
+.elemento__p, .div__position{
+    display: inline-block;
+}
+
+/* Elemento 1 */
+.caja__p_1{
+    margin: 0;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 20;
+}
+/* Elemento 2 */
+.caja__p_2{
+    margin: 0;
+
+    position: absolute;
+    top: 80%;
+    right: 0;
+    z-index: 40;
+    opacity: 0.85;
+}
+/* Elemento 3 */
+.caja__p_3{
+    margin-top: -30px;
+    margin-bottom: 0;
+}
+
+/* Fin Stacking Context */

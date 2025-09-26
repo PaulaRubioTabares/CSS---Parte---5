@@ -20,6 +20,99 @@
         <h1>Css - Parte - 5</h1>
     </header>
 
+        <main>
+
+
+<!-- Inicio  Stacking Context -->
+        <section>
+            <h2>Stacking context</h2>
+            <p>El stacking context o contexto de apilamiento se refiere al orden en que se colocan o sobreponen los elementos o cajas que se crean en el html,
+                teniendo en cuenta las propiedades que se coloquen.
+            </p>
+            <p>El stacking content tiene la siguiente prioridad:</p>
+            <ol class="stacking__list">
+                <li>Elemento con la propiedad de <strong>position y z-index</strong> de 1 ó más</li>
+                <li>Elemento con la propiedad de <strong>position sin z-index</strong></li>
+                <li>Elemento <strong>sin</strong> la propiedad de <strong>position</strong></li>
+                <li>Elemento con <strong>z-index negativo</strong></li>
+            </ol>
+<hr>
+            <h3>Propiedad de position y z-index de 1 ó más</h3>
+                <p><strong>Cuando se aplica la propiedad de z-index, el elemento por obligación debe llevar la propiedad de position. </strong></p>
+        <!-- z-index  -->
+                <p>Si hay dos elementos con position, pero uno de ellos tiene z-index positivo, este se colocará encima del otro. </p>
+                <p class="bloques z__index_1">Elemento con <strong>z-index</strong></p>
+                <p class="bloques z__index_2">Elemento con <strong>position</strong></p>
+                <p>En este caso, el primer elemento tiene z index así que se colocará encima de los demás elementos,
+                    entre más grande sea el número de z index, más por encima se colocará ese elemento respecto a los demás. </p>
+                <p>El segundo elemento tiene un desplazamiento para ver mejor este efecto. </p>
+
+<hr>
+            <h3>Propiedad de position sin z-index</h3>
+                <p>Si hay dos elementos con position, y <strong>ni uno con z-index</strong>, el elemento se sobrepondrá según el orden en el html.</p>
+                <p class="bloques position__1">Elemento con <strong>position 1</strong></p>
+                <p class="bloques position__2">Elemento con <strong>position 2</strong></p>
+                <p>En este caso en el html el <strong>Elemento con position 2</strong>esta después del elemento 1, por ello se coloca encima de este.</p>
+                <p>El segundo elemento tiene un desplazamiento para ver mejor este efecto.</p>
+
+        <!-- Sin z-index ejemplo 2 -->
+                <p class="primera_fila">Este es otro ejemplo en donde en el html esta primero el elemento 2 pero, en el código del css esta primero el elemento 1,
+                    pero igual el último elemento del html se coloca encima.</p>
+                <p class="bloques position__3">Elemento con <strong>position 2</strong></p>
+                <p class="bloques position__4">Elemento con <strong>position 1</strong></p>
+
+        <!-- Sin z-index ejemplo 3 -->
+                <p class="primera_fila">Otro caso que se da es donde <strong>solo uno de los dos</strong> elementos tienen la propiedad de position y el otro no.</p>
+                <p class="bloques position__5">Elemento con <strong>position</strong></p>
+                <p class="bloques">Elemento</p>
+                <p>Como el primer elemento tiene la propiedad de position y el segundo no, se colocará encima del que no tiene position definido,
+                    así el segundo este después en el html.</p>
+
+<hr>
+            <h3>Sin la propiedad de position</h3>
+                <p>Este caso es cuando al o los elementos se les da un desplazamiento mediante margin negativo, pero ninguno tiene position declarada.</p>
+                <p class="bloques">Elemento 1</p>
+                <p class="bloques position__6">Elemento 2</p>
+                <p>El elemento 2 tiene las propiedades de: margin-top: -80px; margin-left: 30px;</p>
+                <p>Así sin la necesidad de colocar position, ya se puede desplazar un elemento y colocarlo encima del otro.</p>
+
+<hr>
+            <h3>Más de un contexto de apilamiento</h3>
+                <p>En los ejemplos anteriores solo había dos elementos, pero se pueden organizar más elementos y contenedores.</p>
+
+                <div class="contenedor__position">
+                    <p class="elemento__p caja__p_1">Elemento 1</p>
+                    <div class="contenedor_2">
+                        <h3 class="title__div">Elemento h3 dentro de div</h3>
+                        <p class="p__div p__div_1">Esta práctica se compone de diversos elementos:</p>
+                        <p class="p__div">El primero es un div que es el contenedor general y es el fondo de todos los demás elementos. </p>
+                        <p class="p__div">El order en el html de los elementos que están dentro de ese contenedor es:</p>
+                        <ol class="lista__div">
+                            <li class="lista__li">Elemento 1</li>
+                            <li class="lista__li">Segundo div o segundo contenedor:
+                                <ol>
+                                    <li>Titulo h3</li>
+                                    <li>Los párrafos</li>
+                                    <li>La lista de elementos</li>
+                                </ol>
+                            </li>
+                            <li class="lista__li">Elemento 2</li>
+                            <li class="lista__li">Elemento 3</li>
+                        </ol>
+                        <p class="p__div">En donde colocando propiedades como margin negativo, display, position, absolute, position relative y z-index
+                            se logra que cada elemento tenga un contexto de apilamiento.</p>
+                    </div>
+                    <p class="elemento__p caja__p_2">Elemento 2</p>
+                    <p class="elemento__p caja__p_3">Elemento 3</p>
+                </div>
+                <p>Cosas a tener en cuenta, la propiedad opacity puede crear un contexto de apilamiento diferente, lo que causaría algunos problemas
+                    con otros elementos si se coloca en un contenedor.</p>
+        </section>
+
+<!-- Fin Stacking Context -->
+
+
+
 
 
 </body>
