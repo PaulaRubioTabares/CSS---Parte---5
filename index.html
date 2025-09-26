@@ -76,7 +76,37 @@
                 <p>El elemento 2 tiene las propiedades de: margin-top: -80px; margin-left: 30px;</p>
                 <p>Así sin la necesidad de colocar position, ya se puede desplazar un elemento y colocarlo encima del otro.</p>
 
+<hr>
+            <h3>Más de un contexto de apilamiento</h3>
+                <p>En los ejemplos anteriores solo había dos elementos, pero se pueden organizar más elementos y contenedores.</p>
 
+                <div class="contenedor__position">
+                    <p class="elemento__p caja__p_1">Elemento 1</p>
+                    <div class="contenedor_2">
+                        <h3 class="title__div">Elemento h3 dentro de div</h3>
+                        <p class="p__div p__div_1">Esta práctica se compone de diversos elementos:</p>
+                        <p class="p__div">El primero es un div que es el contenedor general y es el fondo de todos los demás elementos. </p>
+                        <p class="p__div">El order en el html de los elementos que están dentro de ese contenedor es:</p>
+                        <ol class="lista__div">
+                            <li class="lista__li">Elemento 1</li>
+                            <li class="lista__li">Segundo div o segundo contenedor:
+                                <ol>
+                                    <li>Titulo h3</li>
+                                    <li>Los párrafos</li>
+                                    <li>La lista de elementos</li>
+                                </ol>
+                            </li>
+                            <li class="lista__li">Elemento 2</li>
+                            <li class="lista__li">Elemento 3</li>
+                        </ol>
+                        <p class="p__div">En donde colocando propiedades como margin negativo, display, position, absolute, position relative y z-index
+                            se logra que cada elemento tenga un contexto de apilamiento.</p>
+                    </div>
+                    <p class="elemento__p caja__p_2">Elemento 2</p>
+                    <p class="elemento__p caja__p_3">Elemento 3</p>
+                </div>
+                <p>Cosas a tener en cuenta, la propiedad opacity puede crear un contexto de apilamiento diferente, lo que causaría algunos problemas
+                    con otros elementos si se coloca en un contenedor.</p>
         </section>
 
 <!-- Fin Stacking Context -->
