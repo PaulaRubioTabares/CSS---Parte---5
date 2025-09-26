@@ -203,3 +203,30 @@ section:hover{
 }
 
 /* Fin Stacking Context */
+
+
+
+
+/* Medidas relativas */
+.div__relativo{
+    width: 350px;
+    padding: 1em;
+
+    text-align: center;
+
+    background-color: #FDE4EF;
+}
+.tamaño__final{
+    color: #763F56;
+    background-color: #D5B6C3;
+}
+/* rem */
+.texto__rem{
+    font-size: 2rem;
+}
+/* em */
+.texto__em{
+    font-size: 2em;
+}
+
+/* Fin de rem y em */

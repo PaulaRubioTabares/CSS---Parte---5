@@ -114,6 +114,39 @@
 
 
 
+<!-- Medidas relativas Rem y em -->
+        <section>
+            <h2>Medidas relativas</h2>
+            <p>Aunque ya antes he utilizado estas medidas sobre todo rem, es bueno saber cómo funcionan.</p>
+<hr>
+        <!-- Rem -->
+            <h3>Rem</h3>
+            <p>Esta medida relativa va en referencia al tamaño por defecto en html 16px.</p>
+            <p>Ejemplo</p>
+            <div class="div__relativo">
+                <p>Texto 1 con tamaño del contenedor main.</p>
+                <p class="texto__rem">Texto 2 con medida 2rem.</p>
+            </div>
+            <p>La medida del texto 2 "2rem" será en base a los 16px aunque al contenedor main de la página se le coloque un font-size diferente,
+                en este caso de 1.5rem o 1.5(24px) = 24px.</p>
+            <p class="tamaño__final">Texto 2 2rem = 2(16px) = 32px.</p>
+<hr>
+
+        <!-- Em -->
+            <h3>Em</h3>
+            <p>Medida relativa respecto a su contexto, los elementos tienen su tamaño respecto a sus contenedores.</p>
+            <div class="div__relativo">
+                <p>Texto 1 con tamaño original.</p>
+                <p class="texto__em">Texto 2 con medida 2em.</p>
+            </div>
+            <p>En este caso, la medida dada si toma en cuenta los valores de tamaño definidos para la página, como se dijo antes, en el main de esta página
+                se definió un font-size de 1.5rem o 24px, así que para <strong> calcular la medida de ese texto será con ese tamaño definido, no con la raíz del html.</strong></p>
+            <p class="tamaño__final">2em = 2(1.5rem) = 2(24px) = 48px.</p>
+        </section>
+
+<!-- Fin Medidas relativas rem y em -->
+
+
 
 </body>
 </html>
