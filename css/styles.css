@@ -203,3 +203,92 @@ section:hover{
 }
 
 /* Fin Stacking Context */
+
+
+
+
+/* Medidas relativas */
+.div__relativo{
+    width: 350px;
+    padding: 1em;
+
+    text-align: center;
+
+    background-color: #FDE4EF;
+}
+.tamaño__final{
+    color: #763F56;
+    background-color: #D5B6C3;
+}
+/* rem */
+.texto__rem{
+    font-size: 2rem;
+}
+/* em */
+.texto__em{
+    font-size: 2em;
+}
+
+/* Fin de rem y em */
+
+
+
+
+/* Medidas con Width */
+.contenedor__width{
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+    padding: 2em;
+
+    background-color: #D6B5C3;
+}
+.width__porcentual, .width__auto{
+    margin-left: auto;
+    margin-right: auto;
+
+    text-align: center;
+
+    background-color: #fff;
+    color: #6D394F;
+}
+
+/* width % */
+.width__porcentual{
+    width: 100%;
+}
+.porcentual__2{
+    margin-left: 8em;
+}
+
+/* width auto */
+.width__auto{
+    width: auto;
+}
+
+/* Fin Medidas con Width */
+
+
+
+
+/* Medidas con height */
+.contenedor__height{
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+    height: 8em;
+
+    border: 5px solid #E6C4D2;
+}
+/* Height % */
+.height__porcentual{
+    height: 45%;
+
+    text-align: center;
+
+    background-color: #E6C4D2;
+    color: #6D394F;
+}
+
+/* Fin Medidas con height */
+

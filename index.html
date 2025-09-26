@@ -114,6 +114,99 @@
 
 
 
+<!-- Medidas relativas Rem y em -->
+        <section>
+            <h2>Medidas relativas</h2>
+            <p>Aunque ya antes he utilizado estas medidas sobre todo rem, es bueno saber cómo funcionan.</p>
+<hr>
+        <!-- Rem -->
+            <h3>Rem</h3>
+            <p>Esta medida relativa va en referencia al tamaño por defecto en html 16px.</p>
+            <p>Ejemplo</p>
+            <div class="div__relativo">
+                <p>Texto 1 con tamaño del contenedor main.</p>
+                <p class="texto__rem">Texto 2 con medida 2rem.</p>
+            </div>
+            <p>La medida del texto 2 "2rem" será en base a los 16px aunque al contenedor main de la página se le coloque un font-size diferente,
+                en este caso de 1.5rem o 1.5(24px) = 24px.</p>
+            <p class="tamaño__final">Texto 2 2rem = 2(16px) = 32px.</p>
+<hr>
+
+        <!-- Em -->
+            <h3>Em</h3>
+            <p>Medida relativa respecto a su contexto, los elementos tienen su tamaño respecto a sus contenedores.</p>
+            <div class="div__relativo">
+                <p>Texto 1 con tamaño original.</p>
+                <p class="texto__em">Texto 2 con medida 2em.</p>
+            </div>
+            <p>En este caso, la medida dada si toma en cuenta los valores de tamaño definidos para la página, como se dijo antes, en el main de esta página
+                se definió un font-size de 1.5rem o 24px, así que para <strong> calcular la medida de ese texto será con ese tamaño definido, no con la raíz del html.</strong></p>
+            <p class="tamaño__final">2em = 2(1.5rem) = 2(24px) = 48px.</p>
+        </section>
+
+<!-- Fin Medidas relativas rem y em -->
+
+
+
+
+<!-- Width porcentual y auto -->
+        <section>
+            <h2>Width porcentual y auto</h2>
+            <p>Otras medidas relativas son auto y porcentaje, más usadas en los tamaños de los contenedores.</p>
+<hr>
+        <!-- Width porcentual -->
+            <h3>Width %</h3>
+            <p>Otra medida relativa es en % la cual se calcula automáticamente en relación con el tamaño de la ventana de visualización.</p>
+            <div class="contenedor__width">
+                <div class="width__porcentual">Caja con tamaño en 100% de su contenedor.</div>
+            </div>
+            <p>El espacio que queda de esta primera caja es del padding de su contenedor, pero al colocar un margin o padding al elemento que está dentro se puede desbordar.</p>
+            <div class="contenedor__width">
+                <div class="width__porcentual porcentual__2">Caja con tamaño en 100% de su contenedor y margin.</div>
+            </div>
+            <p>Este elemento ocupa a lo ancho un 100% de su contenedor, ese porcentaje no tiene en cuenta el espacio que se le coloque de margin al elemento que está dentro,
+                por ello se sale de su contenedor y puede crear una barra de scroll.
+            </p>
+<hr>
+        <!-- Width auto -->
+            <h3>Width Auto</h3>
+            <p>Para solucionar el problema de desbordamiento en vez de colocar un width en % se coloca width auto, ya que así el tamaño
+                lo calcula el navegador en base al contenido del elemento.</p>
+            <div class="contenedor__width">
+                <div class="width__auto">Caja con tamaño en auto de su contenedor y margin.</div>
+            </div>
+            <p>Con esto, se puede solucionar ese tipo de desbordamiento cuando se está usando width para ocupar todo el espacio disponible.</p>
+        </section>
+
+<!-- Fin Width porcentual y auto -->
+
+
+
+
+<!-- Height porcentual y auto -->
+        <section>
+            <h2>Height porcentual y auto</h2>
+            <p>Estas medidas relativas al igual que se usan para width, se pueden usar para height.</p>
+            <p><strong>Para colocar height %, si o si debe estar dentro de un contenedor con altura definida, si no está en ese contenedor, el valor que se coloque
+                será reemplazado por height auto, y si no hay contenido en ese elemento entonces puede desaparecer.</strong></p>
+            <div class="contenedor__height">
+                <div class="height__porcentual">Caja con height 50% dentro de un contenedor con height: 8em;</div>
+            </div>
+            <p>Cuando el elemento está dentro de un contenedor con alto definido, el height % de ese elemento será en base a la altura de su contenedor.</p>
+                <div class="height__porcentual">Caja con height 50% sin contenedor de altura definida.</div>
+            <p>Como este segundo elemento no está dentro de un contenedor con altura definida, no se aplica ningún % y se coloca el height en auto ocupando solo su contenido.</p>
+                <div class="height__porcentual"></div>
+            <p>Y aunque no se vea, hay otro elemento con las mismas propiedades que los otros dos, pero al tener el height en %, y sin contenedor con height,
+                este se coloca en auto y como no tiene contenido desaparece visualmente.</p>
+        </section>
+
+<!-- Fin Height porcentual y auto -->
+
+
+
+
+    </main>
+
 
 </body>
 </html>
