@@ -20,7 +20,7 @@
         <h1>Css - Parte - 5</h1>
     </header>
 
-        <main>
+    <main>
 
 
 <!-- Inicio  Stacking Context -->
@@ -205,7 +205,137 @@
 
 
 
+<!-- Inicio ViewPort-->
+        <section>
+            <h2>Viewport</h2>
+            <p>Esta medida, toma como raíz el tamaño de la ventana del navegador o el área visible sin hacer scroll</p>
+            <p>Teniendo valores como:</p>
+            <ul>
+                <li>Vw (Viewport width ó ancho del viewport)</li>
+                <li>Vh (Viewport height ó alto del viewport)</li>
+                <li>Vmin (Viewport mínimo) </li>
+                <li>Vmax (Viewport máximo) </li>
+            </ul>
+            <p>Y para asignar un tamaño con esta medida se debe colocar, por ejemplo: height: 1vw; lo que equivaldría a 1% del alto de la ventana de visualización </p>
+<hr>
+        <!-- Viewport width  -->
+            <h3>Viewport width</h3>
+            <div class="viewport vw">.</div>
+            <p>Este elemento tiene un tamaño de width: 10vw; y height: 5vw; o un 10% y un 5% respecto al <strong>Ancho</strong> de la ventana navegador</p>
+<hr>
+        <!-- Viewport height  -->
+            <h3>Viewport height</h3>
+            <div class="viewport vh">.</div>
+            <p>Este elemento tiene un tamaño de width: 15vh; y height: 8vh; o un 15% y un 8% respecto al <strong>Alto</strong> del navegador</p>
+<hr>
+        <!-- Viewport min  -->
+            <h3>Viewport min</h3>
+            <div class="viewport vmin">.</div>
+            <p>Este elemento tiene un tamaño de width: 20vmin; y height: 12vmin; o un 20% y un 12% de la parte <strong>Más Pequeña, </strong> (ancho o largo) de la ventana del navegador</p>
+<hr>
+        <!-- Viewport max  -->
+            <h3>Viewport max</h3>
+            <div class="viewport vmax">.</div>
+            <p>Este elemento tiene un tamaño de width: 20vmax; y height: 12vmax; o un 20% y un 12% de la parte <strong>Más Grande</strong>, (ancho o largo) del navegador</p>
+        </section>
+
+<!-- Fin ViewPort -->
+
+
+
+<!-- Colores en Css-->
+        <section>
+            <h2>Colores en Css</h2>
+            <p>Para dar color a los elementos en css existen varios formatos:</p>
+
+        <!-- Tabla de colores -->
+            <table class="tabla__colores">
+                <thead>
+                    <th>Formato</th>
+                    <th>Ejemplo</th>
+                </thead>
+
+                <tbody>
+            <!-- Hexadecimal -->
+                    <tr class="hexa">
+                        <td>Hexadecimal</td>
+                        <td>#CA6D94</td>
+                    </tr>
+            <!-- RGB -->
+                    <tr class="rgb">
+                        <td>RGB (red, green, blue)</td>
+                        <td>rgb(202, 109, 148)</td>
+                    </tr>
+            <!-- RGBA -->
+                    <tr class="rgba">
+                        <td>RGBA (red, green, blue, opacidad)</td>
+                        <td>rgba(202, 109, 148, 0.687)</td>
+                    </tr>
+            <!-- HSL -->
+                    <tr class="hsl">
+                        <td>HSL (tono, saturación, luminosidad) </td>
+                        <td>hsl(335, 47%, 61%)</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <p>Los tres formatos sirven para dar la misma cantidad de colores. </p>
+
+        </section>
+
+<!-- Fin Colores en css -->
+
+
+
+
+<!-- Inicio Current-color en Css -->
+        <section>
+            <h2>Current color</h2>
+            <p>Esta propiedad sirve para que los elementos hereden la propiedad color (del texto) del elemento más cercano</p>
+            <p>En el siguiente ejemplo el primer nivel de este elemento tiene la propiedad color: #6D394F; y al tercer nivel se le coloca <strong>background-color: currentColor;</strong></p>
+        <!-- Primer ejemplo -->
+            <div class="currentcolor padre">
+                Primer nivel
+                <div class="hijo">
+                    Segundo nivel
+                    <div class="nieto">Tercer nivel</div>
+                </div>
+            </div>
+            <p>Lo cual hace que el fondo herede ese color. </p>
+<hr>
+        <!-- Segundo ejemplo -->
+            <p>Entre más cerca un sub-elemento con la propiedad color, ese será el que se hereda</p>
+            <p>Los siguientes dos ejemplos en vez de usar background color, usan border color</p>
+            <div class="currentcolor padre">
+                Primer nivel
+                <div class="hijo_2">
+                    Segundo nivel
+                    <div class="nieto_2">Tercer nivel</div>
+                </div>
+            </div>
+            <p>En este caso el tercer nivel queda con la propiedad de <strong>border-color: currentColor;</strong></p>
+<hr>
+        <!-- Tercer ejemplo -->
+            <div class="currentcolor padre">
+                Primer nivel
+                <div class="hijo_2">
+                    Segundo nivel
+                    <div class="nieto_3">Tercer nivel</div>
+                </div>
+            </div>
+            <p>y este último ejemplo, en el tercer nivel se tienen las propiedades de: <strong>color: #763F56; border-color: currentColor;</strong></p>
+        </section>
+
+<!-- Fin Current-color -->
+
     </main>
+
+
+<!-- Footer -->
+    <footer>
+    Footer de la página.
+    </footer>
+
 
 
 </body>
