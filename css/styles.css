@@ -384,6 +384,48 @@ footer{
 .hsl{
     color: hsl(335, 47%, 61%);
 }
-
 /* Fin Colores en Css*/
+
+
+
+
+/*Inicio Current-color */
+/* Cajas */
+.currentcolor, .hijo, .hijo_2, .hijo_3, .nieto, .nieto_2, .nieto_3{
+    margin: 1rem;
+    padding: 1rem;
+    border: 2px solid #EC8FB6;
+}
+
+
+/* background-color: currentColor; */
+.padre{
+    width: 40%;
+    background-color: #FDE4EF;
+    color: #C483D4;
+}
+.hijo{
+    background-color: #FBD0E2;
+}
+.nieto{
+    background-color: currentColor;
+}
+
+/* border-color: currentColor; */
+
+.hijo_2{
+    background-color: #FBD0E2;
+    color: #D0A298;
+}
+.nieto_2{
+    border-color: currentColor;
+}
+
+/* border-color: currentColor; 2 */
+
+.nieto_3{
+    color: #763F56;
+    border-color: currentColor;
+}
+
 

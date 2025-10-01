@@ -286,6 +286,48 @@
 <!-- Fin Colores en css -->
 
 
+
+
+<!-- Inicio Current-color en Css -->
+        <section>
+            <h2>Current color</h2>
+            <p>Esta propiedad sirve para que los elementos hereden la propiedad color (del texto) del elemento más cercano</p>
+            <p>En el siguiente ejemplo el primer nivel de este elemento tiene la propiedad color: #6D394F; y al tercer nivel se le coloca <strong>background-color: currentColor;</strong></p>
+        <!-- Primer ejemplo -->
+            <div class="currentcolor padre">
+                Primer nivel
+                <div class="hijo">
+                    Segundo nivel
+                    <div class="nieto">Tercer nivel</div>
+                </div>
+            </div>
+            <p>Lo cual hace que el fondo herede ese color. </p>
+<hr>
+        <!-- Segundo ejemplo -->
+            <p>Entre más cerca un sub-elemento con la propiedad color, ese será el que se hereda</p>
+            <p>Los siguientes dos ejemplos en vez de usar background color, usan border color</p>
+            <div class="currentcolor padre">
+                Primer nivel
+                <div class="hijo_2">
+                    Segundo nivel
+                    <div class="nieto_2">Tercer nivel</div>
+                </div>
+            </div>
+            <p>En este caso el tercer nivel queda con la propiedad de <strong>border-color: currentColor;</strong></p>
+<hr>
+        <!-- Tercer ejemplo -->
+            <div class="currentcolor padre">
+                Primer nivel
+                <div class="hijo_2">
+                    Segundo nivel
+                    <div class="nieto_3">Tercer nivel</div>
+                </div>
+            </div>
+            <p>y este último ejemplo, en el tercer nivel se tienen las propiedades de: <strong>color: #763F56; border-color: currentColor;</strong></p>
+        </section>
+
+<!-- Fin Current-color -->
+
     </main>
 
 
