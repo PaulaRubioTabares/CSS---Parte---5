@@ -332,3 +332,58 @@ footer{
 
 
 
+/* Inicio Colores en Css*/
+
+/* Tabla de formato de colores*/
+.tabla__colores{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+
+    font-family: 'Times New Roman', Times, serif;
+
+    border-top:2px solid #3e3e3e;
+    border-bottom:2px solid #707070;
+    border-spacing: 17px;
+    box-shadow: 0 0 20px 8px #763F56;
+    transition: all 1s;
+}
+.tabla__colores:hover{
+    border-radius: 20px;
+    box-shadow: 0 0 20px 8px #E8B2C9;
+    scale: 1.04;
+    cursor: pointer;
+}
+
+/* Elementos de la tabla */
+.tabla__colores th{
+    font-style: italic;
+    border-bottom: 2px solid #BEB7B7;
+    background-color: #F0E7EB;
+}
+.tabla__colores td{
+    border-bottom:2px solid #BEB7B7;
+}
+.tabla__colores tr:hover{
+    background-color: #DBCBD2;
+}
+
+/* Color hexadecimal */
+.hexa{
+    color: #CA6D94;
+}
+/*Color rgb */
+.rgb{
+    color: rgb(202, 109, 148);
+}
+/* Color rgba */
+.rgba{
+    color: rgba(202, 109, 148, 0.687);
+}
+/* Color hsl */
+.hsl{
+    color: hsl(335, 47%, 61%);
+}
+
+/* Fin Colores en Css*/
+
