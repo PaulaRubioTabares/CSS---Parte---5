@@ -1,4 +1,5 @@
 body{
+    position: relative;
     margin: 0;
     background-color: #BEB7B7;
     font-family: Roboto, 'Courier New', Courier, monospace;
@@ -33,7 +34,7 @@ h3{
     color: #B18296;
 }
 
-section {
+section{
     padding: 0.8rem 3rem;
     margin: 0 2rem;
     margin-top: 3rem;
@@ -45,13 +46,58 @@ section:hover{
     box-shadow: 0px 0px 20px #763F56, inset 0px 0px 30px #763F56;
 }
 
-footer{
-    width: auto;
-    margin-top: 2rem;
-    padding: 1rem 0;
+
+
+/* Nav */
+.menú{
+    gap: 1rem;
+    display: flex;
+    padding: 0.8rem;
+    margin: -2rem 2rem;
+    margin-top: 0.8rem;
     text-align: center;
     background-color: #D6B5C3;
+    box-shadow: inset 0 0 10px #763F56;
+    list-style-type: none;
 }
+.menú:hover{
+    border-radius: 8px;
+    box-shadow: 0px 0px 30px #763F56;
+}
+
+.menú li{
+    width: 15%;
+    transition: all 0.2s;
+}
+.menú li:hover{
+    border-radius: 5px;
+    background-color: #E6C4D2;
+}
+
+a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #98365F;
+    transition: all 0.1s ease;
+}
+
+a:visited{
+    color: #6D1238; 
+}
+a:hover{
+    color: #B55B81;
+}
+
+.menú li a{
+    display: block;
+    padding: 2rem 0;
+    font-size: 1.2rem;
+}
+
+
+/* Fin  nav */
+
+
 
 
 /* Stacking Context */
@@ -429,3 +475,89 @@ footer{
 }
 
 
+
+
+/* Inicio Color transparente*/
+.transparente__p{
+    color: #C80155;
+}
+
+/* Primer ejemplo parte 1 */
+.transparente_1{
+    border-left: 50px solid #E68BBE;
+    border-top: 50px solid #DDAAC0;
+}
+/* Primer ejemplo parte 2 */
+.transparente_2{
+    border-left: 50px solid #E68BBE;
+    border-top: 50px solid transparent;
+}
+
+
+/* Segundo ejemplo parte 1*/
+.transparente_3{
+    border-left: 50px solid #E68BBE;
+    border-right: 50px solid #DDAAC0;
+    border-top: 50px solid #E6C4D2;
+    border-bottom: 50px solid #F0E7EB;
+}
+/* Segundo ejemplo parte 2 */
+.transparente_4{
+    border-left: 50px solid #E68BBE;
+    border-right: 50px solid #DDAAC0;
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+}
+
+
+/* Segundo ejemplo parte 1*/
+.transparente_5{
+    border-top: 50px solid #E6C4D2;
+    border-left: 50px solid #E68BBE;
+    border-right: 50px solid #DDAAC0;
+}
+/* Segundo ejemplo parte 1*/
+.transparente_6{
+    border-top: 50px solid #E6C4D2;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+}
+
+
+/* Segundo ejemplo parte 2 */
+.transparente_7{
+    border-top: 100px solid #E6C4D2;
+    border-left: 380px solid  #E68BBE;
+    border-right: 380px solid #DDAAC0;
+}
+/* Segundo ejemplo parte 2 */
+.transparente_8{
+    border-top: 100px solid #E6C4D2;
+    border-left: 380px solid  transparent;
+    border-right: 380px solid transparent;
+}
+
+/* Fin Color transparente*/
+
+
+
+footer{
+    position: relative;
+    width: auto;
+    margin-top: 2rem;
+    padding: 2rem 0;
+    background-color: #D6B5C3;
+}
+
+footer:hover{
+    box-shadow: inset 0px 0px 15px #763f56c8;
+}
+
+.final__a{
+    float: right;
+    margin-left: 2rem;
+}
+.final{
+    margin: 0;
+    color: #5C4951;
+}

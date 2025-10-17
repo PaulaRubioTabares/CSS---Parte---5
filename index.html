@@ -14,18 +14,33 @@
 
     <title>Css - Parte - 5</title>
 </head>
-<body>
 
+
+<body>
     <header>
-        <h1>Css - Parte - 5</h1>
+        <h1 id="Titulo">Css - Parte - 5</h1>
     </header>
 
+
+    <nav>
+        <ul class="menú">
+            <li><a href="#enlace__1">Stacking context</a></li>
+            <li><a href="#enlace__2">Medidas relativas</a></li>
+            <li><a href="#enlace__3" class="centrar__menú">Width</a></li>
+            <li><a href="#enlace__4" class="centrar__menú">Height</a></li>
+            <li><a href="#enlace__5" class="centrar__menú">Viewport</a></li>
+            <li><a href="#enlace__6" class="centrar__menú">Colores</a></li>
+            <li><a href="#enlace__7">Current color</a></li>
+            <li><a href="#enlace__8">Color transparente</a></li>
+        </ul>
+    </nav>
+    
+    
     <main>
 
-
-<!-- Inicio  Stacking Context -->
+<!-- Inicio Stacking Context -->
         <section>
-            <h2>Stacking context</h2>
+            <h2 id="enlace__1">Stacking context</h2>
             <p>El stacking context o contexto de apilamiento se refiere al orden en que se colocan o sobreponen los elementos o cajas que se crean en el html,
                 teniendo en cuenta las propiedades que se coloquen.
             </p>
@@ -52,12 +67,12 @@
                 <p>Si hay dos elementos con position, y <strong>ni uno con z-index</strong>, el elemento se sobrepondrá según el orden en el html.</p>
                 <p class="bloques position__1">Elemento con <strong>position 1</strong></p>
                 <p class="bloques position__2">Elemento con <strong>position 2</strong></p>
-                <p>En este caso en el html el <strong>Elemento con position 2</strong>esta después del elemento 1, por ello se coloca encima de este.</p>
-                <p>El segundo elemento tiene un desplazamiento para ver mejor este efecto.</p>
+                <p>En este caso en el html el <strong>Elemento con position 2</strong>esta después del elemento 1, por ello se coloca encima de este. </p>
+                <p>El segundo elemento tiene un desplazamiento para ver mejor este efecto. </p>
 
         <!-- Sin z-index ejemplo 2 -->
                 <p class="primera_fila">Este es otro ejemplo en donde en el html esta primero el elemento 2 pero, en el código del css esta primero el elemento 1,
-                    pero igual el último elemento del html se coloca encima.</p>
+                    pero igual el último elemento del html se coloca encima. </p>
                 <p class="bloques position__3">Elemento con <strong>position 2</strong></p>
                 <p class="bloques position__4">Elemento con <strong>position 1</strong></p>
 
@@ -86,7 +101,7 @@
                         <h3 class="title__div">Elemento h3 dentro de div</h3>
                         <p class="p__div p__div_1">Esta práctica se compone de diversos elementos:</p>
                         <p class="p__div">El primero es un div que es el contenedor general y es el fondo de todos los demás elementos. </p>
-                        <p class="p__div">El order en el html de los elementos que están dentro de ese contenedor es:</p>
+                        <p class="p__div">El orden en el html de los elementos que están dentro de ese contenedor es:</p>
                         <ol class="lista__div">
                             <li class="lista__li">Elemento 1</li>
                             <li class="lista__li">Segundo div o segundo contenedor:
@@ -116,7 +131,7 @@
 
 <!-- Medidas relativas Rem y em -->
         <section>
-            <h2>Medidas relativas</h2>
+            <h2 id="enlace__2">Medidas relativas</h2>
             <p>Aunque ya antes he utilizado estas medidas sobre todo rem, es bueno saber cómo funcionan.</p>
 <hr>
         <!-- Rem -->
@@ -151,7 +166,7 @@
 
 <!-- Width porcentual y auto -->
         <section>
-            <h2>Width porcentual y auto</h2>
+            <h2 id="enlace__3">Width porcentual y auto</h2>
             <p>Otras medidas relativas son auto y porcentaje, más usadas en los tamaños de los contenedores.</p>
 <hr>
         <!-- Width porcentual -->
@@ -185,7 +200,7 @@
 
 <!-- Height porcentual y auto -->
         <section>
-            <h2>Height porcentual y auto</h2>
+            <h2 id="enlace__4">Height porcentual y auto</h2>
             <p>Estas medidas relativas al igual que se usan para width, se pueden usar para height.</p>
             <p><strong>Para colocar height %, si o si debe estar dentro de un contenedor con altura definida, si no está en ese contenedor, el valor que se coloque
                 será reemplazado por height auto, y si no hay contenido en ese elemento entonces puede desaparecer.</strong></p>
@@ -207,7 +222,7 @@
 
 <!-- Inicio ViewPort-->
         <section>
-            <h2>Viewport</h2>
+            <h2 id="enlace__5">Viewport</h2>
             <p>Esta medida, toma como raíz el tamaño de la ventana del navegador o el área visible sin hacer scroll</p>
             <p>Teniendo valores como:</p>
             <ul>
@@ -243,9 +258,10 @@
 
 
 
+
 <!-- Colores en Css-->
         <section>
-            <h2>Colores en Css</h2>
+            <h2 id="enlace__6">Colores en Css</h2>
             <p>Para dar color a los elementos en css existen varios formatos:</p>
 
         <!-- Tabla de colores -->
@@ -290,7 +306,7 @@
 
 <!-- Inicio Current-color en Css -->
         <section>
-            <h2>Current color</h2>
+            <h2 id="enlace__7">Current color</h2>
             <p>Esta propiedad sirve para que los elementos hereden la propiedad color (del texto) del elemento más cercano</p>
             <p>En el siguiente ejemplo el primer nivel de este elemento tiene la propiedad color: #6D394F; y al tercer nivel se le coloca <strong>background-color: currentColor;</strong></p>
         <!-- Primer ejemplo -->
@@ -328,12 +344,66 @@
 
 <!-- Fin Current-color -->
 
+
+
+
+<!-- Inicio Color transparente -->
+        <section>
+            <h2 id="enlace__8">Color transparente</h2>
+            <p>Como su nombre lo indica este valor hace que visualmente los elementos desaparezcan si se aplica</p>
+            <h3>Triángulos con border y transparent</h3>
+        
+    <!-- primer ejemplo parte 1 -->
+            <p>En un elemento vacío para que se dibuje un border, mínimo se deben definir ya sea top o bottom <strong>y</strong> left o right</p>
+            <div class="transparente_1"></div>
+            <p class="transparente__p">En este caso se colocaron los borders de left y top</p>
+
+    <!-- primer ejemplo parte 2 -->
+            <p>En base al caso anterior, si al border top se le coloca como color transparent quedaría solo el left</p>
+            <div class="transparente_2"></div>
+<hr>
+
+    <!-- Segundo ejemplo parte 1 -->
+            <p>Si se colocan <strong>los cuatro</strong> borders en un elemento vacío quedaría:</p>
+            <div class="transparente_3"></div>
+
+    <!-- Segundo ejemplo parte 2 -->
+            <p>Y en este caso se podrían dejar solo los triángulos o borders de los lados</p>
+            <div class="transparente_4"></div>
+<hr>
+
+    <!-- Tercer ejemplo parte 1 -->
+            <p>También se pueden dejar solo el triángulo superior</p>
+            <div class="transparente_5"></div>
+
+    <!-- Tercer ejemplo parte 2 -->
+            <br>
+            <div class="transparente_6"></div>
+<hr>
+
+    <!-- Cuarto ejemplo parte 1 -->
+            <p>Para que quede de un tamaño diferente y completa la forma del triángulo, se modifica el tamaño de cada border</p>
+            <div class="transparente_7"></div>
+
+    <!-- Cuarto ejemplo parte 2 -->
+            <br>
+            <div class="transparente_8"></div>
+<hr>
+            <p>En resumen, para crear un triángulo con border, se debe colocar esta propiedad según la orientación deseada, y se colocan los borders que lo rodean en transparente
+                además de modificar el tamaño de cada border para que quede con la forma deseada.
+            </p>
+        </section>
+
+<!-- Fin Color transparente-->
     </main>
+
+
 
 
 <!-- Footer -->
     <footer>
-    Footer de la página.
+        <div><a href="#Titulo" class="final__a">Ir al Título</a></div>
+        <p class="final">Fin de la página</p>
     </footer>
 
 
